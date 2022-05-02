@@ -4,13 +4,14 @@ import '../styling/App.css';
 
 function App() {
   return (
-    <div id='app'>
+    <div>
       <div id='bg'></div>
       <div id='overlay'></div>
-      <div>
-        <Header />
-        <Projects />
-      </div>
+      <Header />
+      <span id='projects-link-container'>
+        <a href='#projects' id='projects-link'>View My Projects</a>
+      </span>
+      <Projects />
     </div>
   );
 }

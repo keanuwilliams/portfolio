@@ -1,6 +1,14 @@
 /** APPLICATION **/
 /* Background and Overlay */
-#app, 
+@keyframes overlay {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 #bg,
 #overlay, 
 #projects {
@@ -8,22 +16,24 @@
   width: 100vw;
 }
 
-#bg {
-  background: #1C1927 url("../../public/bg.jpg");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+#bg, #overlay {
+  top: 0;
+  left: 0;
+  background-size: 100vw 100vh;
   background-position: top left, center center;
   background-attachment: fixed, fixed;
 }
 
+#bg {
+  background: #1C1927 url("../../public/bg.jpg");
+  background-repeat: no-repeat;
+}
+
 #overlay {
-  background-color: rgba(0, 0, 0, 0.5);
-  top: 0;
-  left: 0;
+  animation: overlay 0.5s 0.5s forwards;
+  opacity: 0;
   position: fixed;
-  background-size: auto, cover;
-  background-repeat: repeat;
-  background-position: top left, center center;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* Header */
@@ -77,9 +87,9 @@
   position: relative;
   text-align: center;
   color: #fff;
-  top: -1rem;
+  top: -1.5rem;
   vertical-align: middle;
-  width: 90%;
+  width: 90vw;
 }
 
 #header h1 {
@@ -162,7 +172,7 @@
 }
 
 .icon-link .label::after {
-  content: " ";
+  content: ' ';
   position: absolute;
   top: 0%;
   left: 50%;
@@ -173,6 +183,22 @@
 }
 
 /* Projects */
+#projects-link-container {
+  animation: nav-icons 0.5s ease-in-out forwards;
+  animation-delay: 2.5s;
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  opacity: 0;
+  line-height: 8em;
+  height: 6em;
+  width: 100vw;
+}
+
+#projects-link {  
+  color: #fff;
+}
+
 #projects {
   background-color: #1C1927;
   background-attachment: fixed, fixed;
@@ -181,12 +207,8 @@
 /** SCREEN SIZES **/
 /* Normal Screen */
 @media screen and (max-width: 1280px) {
-  #header h1 {
-    font-size: 38pt;
-  }
-  
   #header p {
-    font-size: 14pt;
+    font-size: 16pt;
   }
 
   #bg {
@@ -197,11 +219,11 @@
 /* Mobile Screen */
 @media screen and (max-width: 736px) {
   #header h1 {
-    font-size: 30pt;
+    font-size: 32pt;
   }
   
   #header p {
-    font-size: 10pt;
+    font-size: 12pt;
   }
 
   #bg {
@@ -211,6 +233,23 @@
 
 /* Mobile Portrait Screen */
 @media screen and (max-width: 480px) {
+  #header p {
+    font-size: 11pt;
+  }
+
+  #header nav li {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .icon {
+    font-size: 2em;
+  }
+  
+  .icon:hover {
+    font-size: 2.7rem;
+  }
+
   #bg {
     background: #1C1927 url("../../public/bg-mobile.jpg");
     background-size: 100vw 100vh;
