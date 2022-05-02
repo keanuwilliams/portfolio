@@ -1,0 +1,56 @@
+/** APPLICATION **/
+/* Background and Overlay */
+#app, 
+#bg,
+#overlay, 
+#projects {
+  height: 100vh;
+  width: 100vw;
+}
+
+#bg {
+  background: #1C1927 url("../../public/bg.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: top left, center center;
+  background-attachment: fixed, fixed;
+}
+
+#overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-size: auto, cover;
+  background-repeat: repeat;
+  background-position: top left, center center;
+}
+
+/* Projects */
+#projects {
+  background-color: #1C1927;
+  background-attachment: fixed, fixed;
+}
+
+/** SCREEN SIZES **/
+/* Normal Screen */
+@media screen and (max-width: 1280px) {
+  #bg {
+    background-size: 100vw 100vh;
+  }
+}
+
+/* Mobile Screen */
+@media screen and (max-width: 736px) {
+  #bg {
+    background-size: 100vw 100vh;
+  }
+}
+
+/* Mobile Portrait Screen */
+@media screen and (max-width: 480px) {
+  #bg {
+    background: #1C1927 url("../../public/bg-mobile.jpg");
+    background-size: 100vw 100vh;
+  }
+}
