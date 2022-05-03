@@ -2,16 +2,19 @@
   "1": {
     "title": "Inspiration Homepage",
     "description": "An application that interacts with different APIs to display the current weather, a background image, and an inspirational quote.",
+    "githubURL": "https://github.com/keanuwilliams/inspirational-homepage",
     "imgURL": "images/projects/1.png"
   },
   "2": {
-    "title": "Inspiration Homepage",
-    "description": "An application that interacts with different APIs to display the current weather, a background image, and an inspirational quote.",
-    "imgURL": "images/projects/1.png"
+    "title": "ICS314 clUHbs",
+    "description": "An application that provides a centralized directory for UH Manoa student clubs with brief descriptions, meeting times and locations, URLs to websites (if any), contact information for officers, and a few select photos.",
+    "githubURL": "https://github.com/cluhbs/cluhbs.github.io",
+    "imgURL": "images/projects/2.png"
   },
   "3": {
-    "title": "Inspiration Homepage",
-    "description": "An application that interacts with different APIs to display the current weather, a background image, and an inspirational quote.",
-    "imgURL": "images/projects/1.png"
+    "title": "ICS414 Event Planner",
+    "description": "A simple, fast, lightweight event planner that has adherence with RFC 5545 and features that were specified in the project requirements.",
+    "githubURL": "https://github.com/keanuwilliams/ICS414-calendar-project",
+    "imgURL": "images/projects/3.png"
   }
 }

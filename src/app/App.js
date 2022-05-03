@@ -9,7 +9,7 @@ function App() {
       <div id='header-bg'></div>
       <div id='overlay'></div>
       <Header />
-      <AnchorLink text='View My Projects' isDown sectionId='projects-bg' />
+      <AnchorLink text='View Recent Projects' isDown sectionId='projects-bg' />
       <div id='projects-bg'>
         <Projects />
       </div>

@@ -188,7 +188,7 @@
 
 #projects {
   width: 90%;
-  margin: 0 auto;
+  margin: 1rem auto;
   display: flex;
   flex-wrap: wrap;
 }
@@ -207,13 +207,10 @@
   border-bottom: 1px #fff solid;
 }
 
-.project-img:hover {
-  
-}
-
 .project-title {
   font-size: 22px;
   font-weight: 700;
+  color: #fff;
 }
 
 .project-description {
