@@ -1,16 +1,22 @@
+@keyframes anchor-link {
+  0% { transform: translate3d(0, 0, 0); }
+  50% { transform: translate3d(0, -0.2rem, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+
 .anchor-link-container {
-  animation: nav-icons 0.5s ease-in-out forwards;
-  animation-delay: 2.5s;
+  animation: nav-icons 0.5s ease-in-out 2.5s forwards;
   position: fixed;
   text-align: center;
   bottom: 0;
   opacity: 0;
   line-height: 8em;
-  height: 6em;
+  height: 7em;
   width: 100%;
 }
 
-.anchor-link {  
+.anchor-link {
+  animation: anchor-link 1.25s linear forwards infinite;
   transition: all 0.5s ease-in-out;
   color: #fff;
   opacity: 0.75;
@@ -22,6 +28,7 @@
 }
 
 .anchor-link:hover {
+  animation: none;
   transition: all 0.5s ease-in-out;
   font-size: 17pt;
   opacity: 1;

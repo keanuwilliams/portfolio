@@ -1,12 +1,8 @@
 /** APPLICATION **/
 /* Header Background and Overlay */
 @keyframes overlay {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 #wrapper {
@@ -39,25 +35,13 @@
 
 /* Header */
 @keyframes header {
-  0% {
-    opacity: 0;
-  }
-  
-  100% {
-    opacity: 1;
-  }
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 @keyframes nav-icons {
-  0% {
-    transform: translate3d(0, 1rem, 0);
-    opacity: 0;
-  }
-  
-  100% {
-    transform: translate3d(0, 0, 0);
-    opacity: 1;
-  }
+  0% { transform: translate3d(0, 1rem, 0); opacity: 0; } 
+  100% { transform: translate3d(0, 0, 0); opacity: 1; }
 }
 
 #header-group {
@@ -89,7 +73,7 @@
   color: #fff;
   top: -2rem;
   vertical-align: middle;
-  width: 90vw;
+  width: 90%;
 }
 
 #header h1 {
@@ -189,14 +173,49 @@
   background-attachment: fixed, fixed;
 }
 
-#projects {
+#projects-container {
+  animation: header 1s 1.5s forwards;
+  opacity: 0;
   text-align: center;
   color: #fff;
   position: relative;
 }
 
-#projects h2 {
+#projects-container h2 {
   font-size: 32pt;
+}
+
+#projects {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.project-container {
+  width: 300px;
+  max-height: 500px;
+  border: 2px #fff solid;
+  margin: 0 auto;
+  background-color:rgba(255, 255, 255, 0.2);
+}
+
+.project-img {
+  width: 300px;
+  height: 250px;
+  border-bottom: 1px #fff solid;
+}
+
+.project-img:hover {
+  
+}
+
+.project-title {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.project-description {
+  text-align: left;
+  padding: 0 10px;
 }
 
 /** SCREEN SIZES **/
@@ -221,7 +240,7 @@
     font-size: 12pt;
   }
 
-  #projects h2 {
+  #projects-container h2 {
     font-size: 24pt;
   }
 }
