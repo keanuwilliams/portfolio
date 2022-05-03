@@ -1,5 +1,5 @@
 /** APPLICATION **/
-/* Background and Overlay */
+/* Header Background and Overlay */
 @keyframes overlay {
   0% {
     opacity: 0;
@@ -10,9 +10,7 @@
 }
 
 #wrapper {
-  max-width: 100vw;
   width: 100vw;
-  display: block;
   background-color: #1C1927;
 }
 
@@ -36,7 +34,7 @@
   animation: overlay 0.5s 0.5s forwards;
   opacity: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  position: fixed;
+  position: absolute;
 }
 
 /* Header */
@@ -63,20 +61,19 @@
 }
 
 #header-group {
-  height: 100vh;
-  width: 100vw;
-  position: absolute;
+  width: 100%;
+  height: 100%;
+  position: fixed;
   top: 0;
   left: 0;
   text-align: center;
 }
 
 #header-group::before {
-  height: 100vh;
+  height: 100%;
   width: 1px;
   content: '';
   display: inline-block;
-  margin-right: 0;
   vertical-align: middle;
 }
 
@@ -159,14 +156,12 @@
   top: 100%;
   left: 50%;
   margin: 0 0 0 -125px;
-  padding: 0;
   background-color: transparent;
   color: #fff;
   font-weight: 500;
   text-align: center;
   border-radius: 2px;
   position: absolute;
-  z-index: 1;
 }
 
 .icon-link:hover .label {
@@ -187,9 +182,9 @@
 /* Projects */
 #projects-bg {
   background-color: #1C1927;
-  max-width: 100vw;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
+  background-position: cover;
   position: absolute;
   background-attachment: fixed, fixed;
 }
