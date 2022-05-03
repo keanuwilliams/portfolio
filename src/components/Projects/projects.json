@@ -1,0 +1,17 @@
+{
+  "1": {
+    "title": "Inspiration Homepage",
+    "description": "An application that interacts with different APIs to display the current weather, a background image, and an inspirational quote.",
+    "imgURL": "images/projects/1.png"
+  },
+  "2": {
+    "title": "Inspiration Homepage",
+    "description": "An application that interacts with different APIs to display the current weather, a background image, and an inspirational quote.",
+    "imgURL": "images/projects/1.png"
+  },
+  "3": {
+    "title": "Inspiration Homepage",
+    "description": "An application that interacts with different APIs to display the current weather, a background image, and an inspirational quote.",
+    "imgURL": "images/projects/1.png"
+  }
+}
