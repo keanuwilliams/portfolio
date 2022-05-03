@@ -1,18 +1,18 @@
 import Header from '../components/Header';
 import Projects from '../components/Projects';
+import AnchorLink from '../functions/AnchorLink';
 import '../styling/App.css';
 
 function App() {
   return (
-    <div>
-      <div id='bg'></div>
+    <>
+      <div id='header-bg'></div>
       <div id='overlay'></div>
       <Header />
-      <span id='projects-link-container'>
-        <a href='#projects' id='projects-link'>View My Projects</a>
-      </span>
+      <AnchorLink text='View my Projects' isDown sectionId='projects' />
+      <div id='projects-bg'></div>
       <Projects />
-    </div>
+    </>
   );
 }
 

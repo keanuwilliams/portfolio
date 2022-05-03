@@ -9,31 +9,34 @@
   }
 }
 
-#bg,
-#overlay, 
-#projects {
-  height: 100vh;
+#wrapper {
+  max-width: 100vw;
   width: 100vw;
+  display: block;
+  background-color: #1C1927;
 }
 
-#bg, #overlay {
+#header-bg, #overlay {
   top: 0;
   left: 0;
-  background-size: 100vw 100vh;
-  background-position: top left, center center;
-  background-attachment: fixed, fixed;
+  width: 100vw;
+  max-width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-#bg {
-  background: #1C1927 url("../../public/bg.jpg");
-  background-repeat: no-repeat;
+#header-bg {
+  background: #1C1927 url("../../public/bg.jpg") center center fixed;
+  position: relative;
 }
 
 #overlay {
   animation: overlay 0.5s 0.5s forwards;
   opacity: 0;
-  position: fixed;
   background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
 }
 
 /* Header */
@@ -87,7 +90,7 @@
   position: relative;
   text-align: center;
   color: #fff;
-  top: -1.5rem;
+  top: -2rem;
   vertical-align: middle;
   width: 90vw;
 }
@@ -104,8 +107,7 @@
 }
 
 #header nav {
-  margin-top: 1.5rem;
-  margin-left: -2.5rem;
+  margin: 2rem 0 0 -2.5rem;
 }
 
 #header nav li {
@@ -141,8 +143,8 @@
 }
 
 .icon:hover {
-  transition: all 0.2s ease-in-out;
-  font-size: 3.2rem;
+  transition: all 0.3s ease-in-out;
+  font-size: 3.25rem;
 }
 
 .icon-link {
@@ -183,25 +185,23 @@
 }
 
 /* Projects */
-#projects-link-container {
-  animation: nav-icons 0.5s ease-in-out forwards;
-  animation-delay: 2.5s;
-  position: absolute;
-  text-align: center;
-  bottom: 0;
-  opacity: 0;
-  line-height: 8em;
-  height: 6em;
+#projects-bg {
+  background-color: #1C1927;
+  max-width: 100vw;
   width: 100vw;
-}
-
-#projects-link {  
-  color: #fff;
+  height: 100vh;
+  position: absolute;
+  background-attachment: fixed, fixed;
 }
 
 #projects {
-  background-color: #1C1927;
-  background-attachment: fixed, fixed;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+#projects h2 {
+  font-size: 32pt;
 }
 
 /** SCREEN SIZES **/
@@ -211,8 +211,8 @@
     font-size: 16pt;
   }
 
-  #bg {
-    background-size: 100vw 100vh;
+  #header-bg {
+    background-size: cover;
   }
 }
 
@@ -226,8 +226,8 @@
     font-size: 12pt;
   }
 
-  #bg {
-    background-size: 100vw 100vh;
+  #projects h2 {
+    font-size: 24pt;
   }
 }
 
@@ -238,8 +238,8 @@
   }
 
   #header nav li {
-    width: 3rem;
-    height: 3rem;
+    width: 3.5rem;
+    height: 3.5rem;
   }
 
   .icon {
@@ -247,11 +247,11 @@
   }
   
   .icon:hover {
-    font-size: 2.7rem;
+    font-size: 2.5rem;
   }
 
-  #bg {
+  #header-bg {
     background: #1C1927 url("../../public/bg-mobile.jpg");
-    background-size: 100vw 100vh;
+    background-size: cover;
   }
 }
