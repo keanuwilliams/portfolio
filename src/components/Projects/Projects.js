@@ -4,8 +4,8 @@ import '../../styling/App.css';
 
 const Projects = () => {
   return (
-    <section className='subcontainer' id='project-container'>
-      <a className='subtitle' href='#project-container'>
+    <section className='subcontainer' id='recent-projects'>
+      <a className='subtitle' href='#recent-projects'>
         <h2>Recent Projects</h2>
       </a>
       <div id='projects'>

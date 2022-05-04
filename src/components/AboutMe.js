@@ -2,8 +2,8 @@ import '../styling/App.css';
 
 const AboutMe = () => {
   return (
-    <section className='subcontainer' id='about-me-container'>
-      <a className='subtitle' href='#about-me-container'>
+    <section className='subcontainer' id='about-me'>
+      <a className='subtitle' href='#about-me'>
         <h2>About Me</h2>
       </a>
       <p id='about-text'>
