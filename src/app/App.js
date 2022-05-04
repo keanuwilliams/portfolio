@@ -11,7 +11,7 @@ function App() {
       <div id='header-bg'></div>
       <div id='overlay'></div>
       <Header />
-      <AnchorLink text='Get to Know Me' isDown sectionId='main-bg' />
+      <AnchorLink text='View More' isDown sectionId='main-bg' />
       <div id='main-bg'>
         <AboutMe />
         <Projects />
