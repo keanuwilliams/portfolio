@@ -2,10 +2,8 @@ import '../styling/App.css';
 
 const Footer = () => {
   return (
-    <footer>
-      <span>
-        <p></p>
-      </span>
+    <footer id='footer'>
+        <p>&copy;2022 Keanu Williams</p>
     </footer>
   );
 }
