@@ -4,8 +4,10 @@ import '../../styling/App.css';
 
 const Projects = () => {
   return (
-    <section id='projects-container'>
-      <h2>Recent Projects</h2>
+    <section className='subcontainer' id='project-container'>
+      <a className='subtitle' href='#project-container'>
+        <h2>Recent Projects</h2>
+      </a>
       <div id='projects'>
         {Object.keys(json).map((e, i) => 
           <Project key={i} 

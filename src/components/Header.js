@@ -49,7 +49,7 @@ const Links = () => {
 
 const Header = () => {
   return(
-    <section id='header-group'>
+    <section id='header-container'>
       <header id='header'>
         <h1>Keanu Williams</h1>
         <p>aspiring developer &nbsp;&bull;&nbsp; nerd &nbsp;&bull;&nbsp; casual powerlifter</p>

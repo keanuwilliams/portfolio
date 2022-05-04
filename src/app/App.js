@@ -1,4 +1,5 @@
 import Header from '../components/Header';
+import AboutMe from '../components/AboutMe';
 import Projects from '../components/Projects/Projects';
 import Footer from '../components/Footer';
 import AnchorLink from '../functions/AnchorLink';
@@ -10,8 +11,9 @@ function App() {
       <div id='header-bg'></div>
       <div id='overlay'></div>
       <Header />
-      <AnchorLink text='View Recent Projects' isDown sectionId='projects-bg' />
-      <div id='projects-bg'>
+      <AnchorLink text='Get to Know Me' isDown sectionId='main-bg' />
+      <div id='main-bg'>
+        <AboutMe />
         <Projects />
       </div>
       <Footer />

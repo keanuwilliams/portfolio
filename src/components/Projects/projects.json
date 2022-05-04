@@ -3,18 +3,24 @@
     "title": "Inspirational Homepage",
     "description": "An application that interacts with different APIs to display the current weather, a background image, and an inspirational quote.",
     "githubURL": "https://github.com/keanuwilliams/inspirational-homepage",
-    "imgURL": "images/projects/1.png"
+    "imgURL": "images/projects/4.png"
   },
   "2": {
+    "title": "ICS414 Event Planner",
+    "description": "A simple, fast, lightweight event planner that has adherence with RFC 5545 and features that were specified in the project requirements.",
+    "githubURL": "https://github.com/keanuwilliams/ICS414-calendar-project",
+    "imgURL": "images/projects/3.png"
+  },
+  "3": {
     "title": "ICS314 clUHbs",
     "description": "An application that provides a centralized directory for UH Manoa student clubs with brief descriptions, meeting times and locations, URLs to websites (if any), contact information for officers, and a few select photos.",
     "githubURL": "https://github.com/cluhbs/cluhbs.github.io",
     "imgURL": "images/projects/2.png"
   },
-  "3": {
-    "title": "ICS414 Event Planner",
-    "description": "A simple, fast, lightweight event planner that has adherence with RFC 5545 and features that were specified in the project requirements.",
-    "githubURL": "https://github.com/keanuwilliams/ICS414-calendar-project",
-    "imgURL": "images/projects/3.png"
+  "4": {
+    "title": "ICS212 Bank Record Database",
+    "description": "A bank record database using command-line interface to practice program structure. The user is able to add, delete, print individual and print all records.",
+    "githubURL": "https://github.com/keanuwilliams/ICS212/tree/master/Projects/2",
+    "imgURL": "images/projects/1.png"
   }
 }
