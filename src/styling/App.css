@@ -240,6 +240,12 @@
   padding: 0 12px;
 }
 
+.project-site {
+  color: #fff;
+}
+
+/* Footer */
+
 #footer {
   width: 100%;
   position: relative;

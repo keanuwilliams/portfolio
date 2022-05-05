@@ -1,6 +1,6 @@
 import '../../styling/App.css';
 
-const Project = ({imgURL, githubURL, title, description}) => {
+const Project = ({imgURL, githubURL, siteURL, title, description}) => {
   return (
     <div className='project-container'>
       <a href={imgURL}>
@@ -10,6 +10,7 @@ const Project = ({imgURL, githubURL, title, description}) => {
         <p>{title}</p>
       </a>
       <p className='project-description'>{description}</p>
+      {siteURL && <a className='project-site' href={siteURL} target='_blank' rel='noreferrer'> View Site</a>}
     </div>
   );
 }

@@ -3,6 +3,7 @@
     "title": "Inspirational Homepage",
     "description": "An application that interacts with OpenWeather, Unsplash, and Quotes APIs to display the current weather, a background image, and an inspirational quote.",
     "githubURL": "https://github.com/keanuwilliams/inspirational-homepage",
+    "siteURL": "https://homepage.keanuwilliams.dev/",
     "imgURL": "images/projects/4.png"
   },
   "2": {

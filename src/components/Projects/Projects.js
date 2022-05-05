@@ -14,6 +14,7 @@ const Projects = () => {
             title={json[e].title} description={json[e].description} 
             githubURL={json[e].githubURL}
             imgURL={process.env.PUBLIC_URL+json[e].imgURL} 
+            siteURL={json[e].siteURL}
           />
         )}
       </div>
