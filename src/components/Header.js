@@ -51,6 +51,7 @@ const Header = () => {
   return(
     <section id='header-container'>
       <header id='header'>
+        <img id='header-pic' src={process.env.PUBLIC_URL+'images/me.jpg'} alt='me' />
         <h1>Keanu Williams</h1>
         <p>aspiring developer &nbsp;&bull;&nbsp; nerd &nbsp;&bull;&nbsp; casual powerlifter</p>
         <Links />

@@ -136,6 +136,13 @@
   font-size: 1rem;
 }
 
+#header-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  border: 2px #fff solid;
+}
+
 /* Icons */
 .icon {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
