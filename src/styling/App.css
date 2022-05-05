@@ -227,7 +227,6 @@
 }
 
 .project-title {
-  transition: all 0.3s ease-in-out;
   font-size: 14pt;
   font-weight: 700;
   color: #fff;
@@ -235,11 +234,6 @@
   position: relative;
   height: 3rem;
   line-height: 3rem;
-}
-
-.project-title:hover {
-  transition: all 0.3s ease-in-out;
-  font-size: 14.5pt;
 }
 
 .project-description {
