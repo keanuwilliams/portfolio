@@ -31,9 +31,9 @@ const Links = () => {
           <span className="label">keanuwilliams</span>
         </li>
         <li className='icon-link'>
-          <a href='#'>
+          <button>
             <FontAwesomeIcon icon={faDiscord} className='icon' />
-          </a>
+          </button>
           <span className="label">keanuwilliams#0891</span>
         </li>
         <li className='icon-link'>
