@@ -135,7 +135,6 @@
   padding: 0;
   font-size: 1rem;
   line-height: 5rem;
-  width: 5rem;
   height: 5rem;
 }
 
@@ -219,9 +218,14 @@
   width: 300px;
   max-height: 550px;
   border: 2px #fff solid;
+  border-radius: 1%;
   margin: 10px auto;
-  padding: 12px;
+  padding: 0 0 15px;
   background-color:rgba(255, 255, 255, 0.2);
+}
+
+.project-description {
+  padding: 0 10px;
 }
 
 .project-img {
